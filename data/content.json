@@ -1,0 +1,170 @@
+{
+  "home": {
+    "hero": {
+      "title": "Bringing Hope to the African Child",
+      "subtitle": "Join us in our mission to empower the next generation through education, skills development, and poverty elimination across Africa.",
+      "ctaText": "Donate Now",
+      "ctaLink": "/give"
+    },
+    "whoWeAre": {
+      "title": "Who We Are",
+      "description": "Tribe Africa Foundation is a multifaceted non-governmental organization dedicated to transforming lives across the African landscape. Established in March 2015, we work tirelessly to bring hope to indigenous African communities by finding sustainable solutions to pressing challenges.",
+      "mission": "To bring hope to the African landscape by finding solutions to the problems of the indigenous African and helping in the gradual developing process of the African child.",
+      "ctaText": "Learn More",
+      "ctaLink": "/about"
+    },
+    "impact": {
+      "title": "Our Impact",
+      "stats": [
+        {
+          "number": "1000+",
+          "label": "Children Supported"
+        },
+        {
+          "number": "50+",
+          "label": "Communities Reached"
+        },
+        {
+          "number": "25+",
+          "label": "Educational Programs"
+        },
+        {
+          "number": "500+",
+          "label": "Skills Trained"
+        }
+      ]
+    },
+    "getInvolved": {
+      "title": "Make a Difference Today",
+      "description": "Your support can transform lives. Together, we can bring hope and create opportunities for African children and communities.",
+      "donateText": "Give Hope Today",
+      "contactText": "Contact Us"
+    }
+  },
+  "about": {
+    "hero": {
+      "title": "About Tribe Africa Foundation",
+      "subtitle": "Transforming lives through education, empowerment, and community development"
+    },
+    "story": {
+      "title": "Our Story",
+      "content": "Tribe Africa Foundation Ghana was established in March 2015 as a beacon of hope for the African child and indigenous communities. Born from a deep commitment to address the systemic challenges facing African societies, our foundation has grown into a comprehensive organization working across multiple sectors to create lasting change. We believe that every African child deserves access to quality education, opportunities for skill development, and a pathway out of poverty."
+    },
+    "mission": {
+      "title": "Our Mission",
+      "content": "Our mission is to bring hope to the African landscape by finding sustainable solutions to the challenges facing indigenous Africans. We focus on education, rural poverty elimination, and skills development as the cornerstones of our work. Through strategic partnerships and community-driven initiatives, we help in the gradual development of the African child, ensuring they have the tools and resources needed to reach their full potential."
+    },
+    "vision": {
+      "title": "Our Vision",
+      "content": "Tribe Africa seeks to be the brand associated with the renewal of hope and poverty elimination across the African continent. We envision a future where every African child has access to quality education, where rural communities thrive economically, and where indigenous knowledge is preserved and celebrated. Our vision is of an Africa where opportunity is not determined by circumstance, but by potential and determination."
+    },
+    "purpose": {
+      "title": "Our Purpose",
+      "content": "Our purpose is to minimize poverty and increase the academic achievement of the African child through comprehensive support systems. We work to provide educational materials, scholarships, skills training, and mentorship programs that empower young Africans to break the cycle of poverty. We also focus on community development initiatives that create sustainable economic opportunities for families and villages."
+    },
+    "values": {
+      "title": "Our Core Values",
+      "items": [
+        {
+          "title": "Respect",
+          "description": "We treat every individual with dignity and respect, honoring their unique experiences and perspectives."
+        },
+        {
+          "title": "Integrity",
+          "description": "We keep our promises and maintain transparency in all our operations and partnerships."
+        },
+        {
+          "title": "Hope",
+          "description": "We are committed to renewing hope in communities that have faced adversity and hardship."
+        },
+        {
+          "title": "Empowerment",
+          "description": "We believe in empowering individuals and communities to create their own pathways to success."
+        },
+        {
+          "title": "Community",
+          "description": "We work hand-in-hand with local communities, respecting their knowledge and involving them in decision-making."
+        }
+      ]
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "Get In Touch",
+      "subtitle": "We'd love to hear from you. Reach out to us with any questions or to learn how you can get involved."
+    },
+    "info": {
+      "email": "tribeafrica93@gmail.com",
+      "phone": "+233202558623",
+      "whatsapp": "+233261337152",
+      "address": "Accra, Ghana"
+    },
+    "form": {
+      "title": "Send Us a Message",
+      "subtitle": "Have a question or want to partner with us? Fill out the form below and we'll get back to you soon."
+    }
+  },
+  "give": {
+    "hero": {
+      "title": "Your Donation Can Change a Life",
+      "subtitle": "Every contribution makes a real difference in the lives of African children and communities."
+    },
+    "impact": {
+      "title": "What Your Donation Can Do",
+      "items": [
+        {
+          "amount": "$20",
+          "description": "Provides educational materials for a child for one month"
+        },
+        {
+          "amount": "$50",
+          "description": "Supports skills training for a youth for one week"
+        },
+        {
+          "amount": "$100",
+          "description": "Covers school fees for a child for one term"
+        },
+        {
+          "amount": "$500",
+          "description": "Supports a complete community development project"
+        }
+      ]
+    },
+    "form": {
+      "title": "Make Your Donation",
+      "description": "Choose an amount or enter a custom donation. Your generosity brings hope to those who need it most."
+    }
+  },
+  "footer": {
+    "tagline": "Bringing hope to the African landscape through education, empowerment, and community development.",
+    "quickLinks": [
+      {
+        "text": "Home",
+        "link": "/"
+      },
+      {
+        "text": "About Us",
+        "link": "/about"
+      },
+      {
+        "text": "Projects",
+        "link": "/projects"
+      },
+      {
+        "text": "Contact",
+        "link": "/contact"
+      },
+      {
+        "text": "Donate",
+        "link": "/give"
+      }
+    ],
+    "social": {
+      "facebook": "#",
+      "twitter": "#",
+      "instagram": "#",
+      "linkedin": "#"
+    },
+    "copyright": "© 2025 Tribe Africa Foundation. All rights reserved."
+  }
+}
