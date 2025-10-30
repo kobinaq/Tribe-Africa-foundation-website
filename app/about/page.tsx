@@ -128,12 +128,12 @@ export default function AboutPage() {
                 {/* Team Member Image */}
                 <div className="relative h-64 bg-gradient-to-br from-primary-400 to-primary-600">
                   {/* Uncomment below to use actual team member images */}
-                  {/* <Image
+                  <Image
                     src={member.image}
                     alt={member.name}
                     fill
                     className="object-cover"
-                  /> */}
+                  /> 
                   {/* Placeholder with initials */}
                   <div className="absolute inset-0 flex items-center justify-center">
                     <div className="w-32 h-32 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
