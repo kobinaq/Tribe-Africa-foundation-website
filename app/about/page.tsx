@@ -1,4 +1,5 @@
-import { FaHeart, FaHandshake, FaLightbulb, FaUsers, FaGlobeAfrica } from 'react-icons/fa';
+import Image from 'next/image';
+import { FaHeart, FaHandshake, FaLightbulb, FaUsers, FaGlobeAfrica, FaLinkedin, FaTwitter, FaEnvelope } from 'react-icons/fa';
 import { getContent } from '@/lib/data';
 
 export default function AboutPage() {
@@ -104,6 +105,84 @@ export default function AboutPage() {
                 </div>
               );
             })}
+          </div>
+        </div>
+      </section>
+
+      {/* Team Section */}
+      <section className="py-16 md:py-24 bg-gray-50">
+        <div className="container-custom">
+          <div className="text-center mb-12">
+            <h2 className="section-title">{about.team.title}</h2>
+            <p className="section-subtitle mx-auto mt-4">
+              {about.team.subtitle}
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            {about.team.members.map((member, index) => (
+              <div
+                key={index}
+                className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow"
+              >
+                {/* Team Member Image */}
+                <div className="relative h-64 bg-gradient-to-br from-primary-400 to-primary-600">
+                  {/* Uncomment below to use actual team member images */}
+                  {/* <Image
+                    src={member.image}
+                    alt={member.name}
+                    fill
+                    className="object-cover"
+                  /> */}
+                  {/* Placeholder with initials */}
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="w-32 h-32 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
+                      <span className="text-white text-4xl font-bold">
+                        {member.name.split(' ').map(n => n[0]).join('')}
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Team Member Info */}
+                <div className="p-6">
+                  <h3 className="text-xl font-bold text-gray-900 mb-1">
+                    {member.name}
+                  </h3>
+                  <p className="text-primary-600 font-semibold mb-3">
+                    {member.role}
+                  </p>
+                  <p className="text-gray-600 text-sm mb-4">
+                    {member.bio}
+                  </p>
+
+                  {/* Social Links (optional) */}
+                  <div className="flex gap-3">
+                    <a
+                      href="#"
+                      className="w-8 h-8 bg-gray-100 hover:bg-primary-600 hover:text-white rounded-full flex items-center justify-center transition-colors"
+                      aria-label="LinkedIn"
+                    >
+                      <FaLinkedin size={14} />
+                    </a>
+                    <a
+                      href="#"
+                      className="w-8 h-8 bg-gray-100 hover:bg-primary-600 hover:text-white rounded-full flex items-center justify-center transition-colors"
+                      aria-label="Twitter"
+                    >
+                      <FaTwitter size={14} />
+                    </a>
+                    <a
+                      href="#"
+                      className="w-8 h-8 bg-gray-100 hover:bg-primary-600 hover:text-white rounded-full flex items-center justify-center transition-colors"
+                      aria-label="Email"
+                    >
+                      <FaEnvelope size={14} />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>

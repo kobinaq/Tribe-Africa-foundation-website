@@ -86,6 +86,48 @@
           "description": "We work hand-in-hand with local communities, respecting their knowledge and involving them in decision-making."
         }
       ]
+    },
+    "team": {
+      "title": "Meet Our Team",
+      "subtitle": "Dedicated individuals working together to bring hope and change to African communities",
+      "members": [
+        {
+          "name": "Kwame Mensah",
+          "role": "Executive Director",
+          "image": "/images/team/member1.jpg",
+          "bio": "Kwame leads our strategic initiatives and oversees all operations, bringing over 15 years of experience in community development."
+        },
+        {
+          "name": "Akosua Osei",
+          "role": "Programs Director",
+          "image": "/images/team/member2.jpg",
+          "bio": "Akosua manages our educational programs and ensures quality delivery of services to communities across Ghana."
+        },
+        {
+          "name": "Kofi Asante",
+          "role": "Finance Manager",
+          "image": "/images/team/member3.jpg",
+          "bio": "Kofi handles all financial operations and ensures transparency in our resource management and donor relations."
+        },
+        {
+          "name": "Ama Boateng",
+          "role": "Community Relations Officer",
+          "image": "/images/team/member4.jpg",
+          "bio": "Ama builds and maintains relationships with local communities, ensuring our programs meet their actual needs."
+        },
+        {
+          "name": "Yaw Addai",
+          "role": "Skills Training Coordinator",
+          "image": "/images/team/member5.jpg",
+          "bio": "Yaw coordinates our vocational training programs, connecting youth with opportunities for economic empowerment."
+        },
+        {
+          "name": "Abena Owusu",
+          "role": "Education Specialist",
+          "image": "/images/team/member6.jpg",
+          "bio": "Abena develops curriculum and training materials for our educational initiatives, working closely with local schools."
+        }
+      ]
     }
   },
   "contact": {

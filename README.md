@@ -113,6 +113,21 @@ All site content can be updated through JSON files in the `data/` directory:
 - `images`: Array of additional image paths
 - `videos`: Array of video embed URLs
 
+### Adding Media Files
+
+📸 **For detailed instructions on uploading images and videos, see [MEDIA_GUIDE.md](./MEDIA_GUIDE.md)**
+
+Quick summary:
+- **Hero Image**: `public/images/hero/main-hero.jpg` (uncomment code in `app/page.tsx`)
+- **Team Photos**: `public/images/team/member[1-6].jpg` (uncomment code in `app/about/page.tsx`)
+- **Project Media**: `public/projects/[project-slug]/images/` and `/videos/`
+
+The MEDIA_GUIDE contains:
+- Directory structure and file naming conventions
+- Image specifications and optimization tips
+- Step-by-step instructions for adding project media
+- Troubleshooting common issues
+
 ### Adding a New Project
 
 1. Open `data/projects.json`
