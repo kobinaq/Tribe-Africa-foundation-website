@@ -16,14 +16,13 @@ export default function Home() {
         <div className="absolute inset-0 z-0">
           {/* You can replace this with an actual image */}
           <div className="relative w-full h-full bg-gradient-to-br from-primary-700 to-primary-900">
-            {/* Uncomment below to use an actual hero image */}
-            {/* <Image
+           <Image
               src="/images/hero/main-hero.jpg"
               alt="Tribe Africa Foundation"
               fill
               className="object-cover"
               priority
-            /> */}
+            />
             {/* Overlay */}
             <div className="absolute inset-0 bg-black/50"></div>
           </div>
