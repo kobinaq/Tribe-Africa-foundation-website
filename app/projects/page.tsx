@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { FaArrowRight, FaCalendar, FaTag, FaHeart } from 'react-icons/fa';
 import { getProjects } from '@/lib/data';
+import ProjectImage from '@/components/ProjectImage';
 
 export default function ProjectsPage() {
   const projects = getProjects();
@@ -26,10 +27,13 @@ export default function ProjectsPage() {
                 key={project.slug}
                 className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-all hover:-translate-y-1"
               >
-                {/* Project Image Placeholder */}
-                <div className="h-56 bg-gradient-to-br from-primary-400 to-primary-600 flex items-center justify-center">
-                  <FaHeart className="text-white text-7xl opacity-50" />
-                </div>
+                {/* Project Image */}
+                <ProjectImage
+                  src={project.featured_image}
+                  alt={project.title}
+                  className="h-56"
+                  iconSize="lg"
+                />
 
                 {/* Project Content */}
                 <div className="p-6">
