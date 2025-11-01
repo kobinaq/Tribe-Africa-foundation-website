@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { FaArrowLeft, FaCalendar, FaTag, FaHeart } from 'react-icons/fa';
 import { getProjectBySlug, getProjects } from '@/lib/data';
+import ProjectImage from '@/components/ProjectImage';
 
 export async function generateStaticParams() {
   const projects = getProjects();
@@ -56,9 +57,13 @@ export default function ProjectDetailPage({ params }: { params: { slug: string }
       <section className="py-12 bg-gray-50">
         <div className="container-custom">
           <div className="max-w-5xl mx-auto">
-            <div className="aspect-video bg-gradient-to-br from-primary-400 to-primary-600 rounded-lg flex items-center justify-center shadow-xl">
-              <FaHeart className="text-white text-9xl opacity-50" />
-            </div>
+            <ProjectImage
+              src={project.featured_image}
+              alt={project.title}
+              className="aspect-video rounded-lg shadow-xl"
+              iconSize="xl"
+              priority
+            />
           </div>
         </div>
       </section>
@@ -85,12 +90,13 @@ export default function ProjectDetailPage({ params }: { params: { slug: string }
                 <h2 className="text-2xl font-bold mb-6">Project Gallery</h2>
                 <div className="grid md:grid-cols-2 gap-6">
                   {project.images.map((image, index) => (
-                    <div
+                    <ProjectImage
                       key={index}
-                      className="aspect-video bg-gradient-to-br from-primary-300 to-primary-500 rounded-lg flex items-center justify-center shadow-md"
-                    >
-                      <FaHeart className="text-white text-6xl opacity-50" />
-                    </div>
+                      src={image}
+                      alt={`${project.title} - Image ${index + 1}`}
+                      className="aspect-video rounded-lg shadow-md"
+                      iconSize="md"
+                    />
                   ))}
                 </div>
               </div>
