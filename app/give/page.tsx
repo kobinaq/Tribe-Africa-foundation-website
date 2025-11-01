@@ -42,13 +42,13 @@ export default function GivePage() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
-    const amountInKobo = parseFloat(formData.amount) * 100; // Paystack expects amount in kobo/cents
+    const amountInPesewas = parseFloat(formData.amount) * 100; // Paystack expects amount in pesewas (smallest unit of Ghana Cedis)
 
     // Initialize Paystack
     const handler = window.PaystackPop.setup({
       key: process.env.NEXT_PUBLIC_PAYSTACK_PUBLIC_KEY || 'pk_test_xxxxxxxxxxxxx', // Replace with actual key
       email: formData.email,
-      amount: amountInKobo,
+      amount: amountInPesewas,
       currency: 'GHS', // Ghana Cedis
       ref: 'TAF_' + Math.floor(Math.random() * 1000000000 + 1),
       metadata: {

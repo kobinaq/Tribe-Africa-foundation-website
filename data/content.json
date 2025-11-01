@@ -155,19 +155,19 @@
       "title": "What Your Donation Can Do",
       "items": [
         {
-          "amount": "$20",
+          "amount": "₵20",
           "description": "Provides educational materials for a child for one month"
         },
         {
-          "amount": "$50",
+          "amount": "₵50",
           "description": "Supports skills training for a youth for one week"
         },
         {
-          "amount": "$100",
+          "amount": "₵100",
           "description": "Covers school fees for a child for one term"
         },
         {
-          "amount": "$500",
+          "amount": "₵500",
           "description": "Supports a complete community development project"
         }
       ]
