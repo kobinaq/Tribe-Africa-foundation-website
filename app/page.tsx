@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { FaArrowRight, FaHeart, FaGraduationCap, FaHandsHelping, FaUsers } from 'react-icons/fa';
 import { getContent, getFeaturedProjects } from '@/lib/data';
+import ProjectImage from '@/components/ProjectImage';
 
 export default function Home() {
   const content = getContent();
@@ -129,11 +130,11 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-8">
             {featuredProjects.map((project) => (
               <div key={project.slug} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
-                <div className="h-48 bg-gradient-to-br from-primary-400 to-primary-600 flex items-center justify-center">
-                  <div className="text-white text-6xl">
-                    <FaHeart />
-                  </div>
-                </div>
+                <ProjectImage
+                  src={project.featured_image}
+                  alt={project.title}
+                  className="h-48"
+                />
                 <div className="p-6">
                   <span className="text-xs font-semibold text-primary-600 uppercase">{project.category}</span>
                   <h3 className="text-xl font-bold mt-2 mb-3">{project.title}</h3>
