@@ -124,7 +124,7 @@ export default function Home() {
             <span className="text-primary-600 font-semibold text-sm uppercase tracking-wide">Our Work</span>
             <h2 className="section-title mt-2">Featured Projects</h2>
             <p className="section-subtitle mx-auto mt-4">
-              Discover the transformative work we're doing across African communities
+              Discover the transformative work we're doing across Ghana
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
