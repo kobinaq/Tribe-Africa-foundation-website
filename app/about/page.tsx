@@ -134,11 +134,7 @@ export default function AboutPage() {
                     fill
                     className="object-cover"
                   /> 
-                  {/* Placeholder with initials */}
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="w-32 h-32 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
-                      <span className="text-white text-4xl font-bold">
-                        {member.name.split(' ').map(n => n[0]).join('')}
+
                       </span>
                     </div>
                   </div>
