@@ -15,7 +15,6 @@ export default function Home() {
       <section className="relative min-h-[600px] md:min-h-[700px] flex items-center">
         {/* Hero Image Background */}
         <div className="absolute inset-0 z-0">
-          {/* You can replace this with an actual image */}
           <div className="relative w-full h-full bg-gradient-to-br from-primary-700 to-primary-900">
            <Image
               src="/images/hero/main-hero.jpg"
@@ -102,7 +101,6 @@ export default function Home() {
       {/* Impact Section */}
       <section className="py-16 bg-gray-50">
         <div className="container-custom text-center">
-          <span className="text-primary-600 font-semibold text-sm uppercase tracking-wide">Our Impact</span>
           <h2 className="section-title mt-2 mb-12">{home.impact.title}</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {home.impact.stats.map((stat, index) => (
@@ -121,7 +119,6 @@ export default function Home() {
       <section className="py-16 md:py-24">
         <div className="container-custom">
           <div className="text-center mb-12">
-            <span className="text-primary-600 font-semibold text-sm uppercase tracking-wide">Our Work</span>
             <h2 className="section-title mt-2">Featured Projects</h2>
             <p className="section-subtitle mx-auto mt-4">
               Discover the transformative work we're doing across Ghana
