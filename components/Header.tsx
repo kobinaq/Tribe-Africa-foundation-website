@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { useState } from 'react';
 import { FaBars, FaTimes, FaPhone, FaEnvelope } from 'react-icons/fa';
 
@@ -36,8 +37,14 @@ export default function Header() {
       <nav className="container-custom py-4">
         <div className="flex justify-between items-center">
           {/* Logo */}
-          <Link href="/" className="text-2xl font-bold text-primary-700">
-            Tribe Africa Foundation
+          <Link href="/" className="flex items-center">
+            <Image
+              src="/images/logo.png"
+              alt="Tribe Africa Foundation"
+              width={150}
+              height={50}
+              className="h-12 w-auto"
+            />
           </Link>
 
           {/* Desktop Navigation */}
