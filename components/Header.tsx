@@ -17,22 +17,7 @@ export default function Header() {
 
   return (
     <header className="bg-white shadow-md sticky top-0 z-50">
-      {/* Top Bar */}
-      <div className="bg-primary-700 text-white py-2 hidden md:block">
-        <div className="container-custom flex justify-between items-center text-sm">
-          <div className="flex gap-6">
-            <a href="tel:+233202558623" className="flex items-center gap-2 hover:text-primary-200">
-              <FaPhone size={14} />
-              <span>+233 202 558 623</span>
-            </a>
-            <a href="mailto:tribeafrica93@gmail.com" className="flex items-center gap-2 hover:text-primary-200">
-              <FaEnvelope size={14} />
-              <span>tribeafrica93@gmail.com</span>
-            </a>
-          </div>
-        </div>
-      </div>
-
+      
       {/* Main Navigation */}
       <nav className="container-custom py-4">
         <div className="flex justify-between items-center">
@@ -92,7 +77,7 @@ export default function Header() {
                 className="btn-primary text-center"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Donate
+                Donate ❤
               </Link>
             </div>
           </div>
