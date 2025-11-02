@@ -147,23 +147,23 @@ export default function AboutPage() {
                     {member.bio}
                   </p>
 
-                  {/* Social Links */}
+                  {/* Social Links (optional) */}
                   <div className="flex gap-3">
-                    
+                    <a
                       href="#"
                       className="w-8 h-8 bg-gray-100 hover:bg-primary-600 hover:text-white rounded-full flex items-center justify-center transition-colors"
                       aria-label="LinkedIn"
                     >
                       <FaLinkedin size={14} />
                     </a>
-                    
+                    <a
                       href="#"
                       className="w-8 h-8 bg-gray-100 hover:bg-primary-600 hover:text-white rounded-full flex items-center justify-center transition-colors"
                       aria-label="Twitter"
                     >
                       <FaTwitter size={14} />
                     </a>
-                    
+                    <a
                       href="#"
                       className="w-8 h-8 bg-gray-100 hover:bg-primary-600 hover:text-white rounded-full flex items-center justify-center transition-colors"
                       aria-label="Email"
@@ -188,13 +188,13 @@ export default function AboutPage() {
             Together, we can create lasting change and bring hope to communities across Africa
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            
+            <a
               href="/give"
               className="bg-white text-primary-700 hover:bg-gray-100 font-semibold py-4 px-8 rounded-lg transition-colors"
             >
               Make a Donation
             </a>
-            
+            <a
               href="/contact"
               className="bg-transparent border-2 border-white hover:bg-white hover:text-primary-700 font-semibold py-4 px-8 rounded-lg transition-colors"
             >
