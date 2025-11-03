@@ -1,0 +1,9 @@
+# Hero Carousel Images
+# Place 3 hero images here:
+# - hero1.jpg (will be shown first)
+# - hero2.jpg (will be shown second)
+# - hero3.jpg (will be shown third)
+#
+# The carousel will automatically transition between these images every 5 seconds
+# Recommended size: 1920x1080px or similar widescreen dimensions
+# Until you upload the images, a gradient background will be shown as fallback
