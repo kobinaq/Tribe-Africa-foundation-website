@@ -20,7 +20,6 @@ export default function Home() {
     '/images/hero/hero3.png',
     '/images/hero/hero4.jpg',
     '/images/hero/hero5.jpg',
-    '/images/hero/hero6.jpg',
   ];
 
   return (
