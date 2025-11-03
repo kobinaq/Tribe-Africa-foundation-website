@@ -39,14 +39,14 @@ export default function HeroCarousel({ images, interval = 5000 }: HeroCarouselPr
 
   return (
     <div className="relative w-full h-full">
-      <AnimatePresence mode="wait">
+      <AnimatePresence>
         {!imageErrors[currentIndex] ? (
           <motion.div
             key={currentIndex}
-            initial={{ opacity: 0, scale: 1.1 }}
-            animate={{ opacity: 1, scale: 1 }}
-            exit={{ opacity: 0, scale: 0.95 }}
-            transition={{ duration: 1.2, ease: 'easeInOut' }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 1.5, ease: 'easeInOut' }}
             className="absolute inset-0"
           >
             <Image
@@ -60,9 +60,16 @@ export default function HeroCarousel({ images, interval = 5000 }: HeroCarouselPr
             <div className="absolute inset-0 bg-black/50"></div>
           </motion.div>
         ) : (
-          <div className="absolute inset-0 bg-gradient-to-br from-primary-700 to-primary-900">
+          <motion.div
+            key="fallback"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 1.5, ease: 'easeInOut' }}
+            className="absolute inset-0 bg-gradient-to-br from-primary-700 to-primary-900"
+          >
             <div className="absolute inset-0 bg-black/50"></div>
-          </div>
+          </motion.div>
         )}
       </AnimatePresence>
 
