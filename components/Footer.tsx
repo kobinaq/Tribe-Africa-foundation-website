@@ -14,13 +14,14 @@ export default function Footer() {
           {/* About Section */}
           <div>
             <Link href="/" className="flex items-center">
-            <Image
-              src="/images/logo.png"
-              alt="Tribe Africa Foundation"
-              width={150}
-              height={50}
-              className="h-12 w-auto"
-            />
+              <Image
+                src="/images/logo.png"
+                alt="Tribe Africa Foundation"
+                width={150}
+                height={50}
+                className="h-12 w-auto"
+              />
+            </Link>
             <p className="text-gray-300 text-sm">
               {footer.tagline}
             </p>
