@@ -17,8 +17,8 @@ export default function Home() {
   // Hero images that will transition (you can replace these paths with actual images)
   const heroImages = [
     '/images/hero/hero1.jpg',
-    '/images/hero/hero2.jpg',
-    '/images/hero/hero3.jpg',
+    '/images/hero/hero2.png',
+    '/images/hero/hero3.png',
   ];
 
   return (
