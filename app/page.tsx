@@ -7,6 +7,7 @@ import { getContent, getFeaturedProjects } from '@/lib/data';
 import HeroCarousel from '@/components/HeroCarousel';
 import CountUpStats from '@/components/CountUpStats';
 import FadeInSection from '@/components/FadeInSection';
+import ProjectImage from '@/components/ProjectImage';
 
 export default function Home() {
   const content = getContent();
@@ -137,24 +138,22 @@ export default function Home() {
       {/* Featured Projects Section */}
       <section className="py-16 md:py-24">
         <div className="container-custom">
-          <FadeInSection>
-            <div className="text-center mb-12">
-              <span className="text-primary-600 font-semibold text-sm uppercase tracking-wide">Our Work</span>
-              <h2 className="section-title mt-2">Featured Projects</h2>
-              <p className="section-subtitle mx-auto mt-4">
-                Discover the transformative work we're doing across African communities
-              </p>
-            </div>
-          </FadeInSection>
+          <div className="text-center mb-12">
+            <span className="text-primary-600 font-semibold text-sm uppercase tracking-wide">Our Work</span>
+            <h2 className="section-title mt-2">Featured Projects</h2>
+            <p className="section-subtitle mx-auto mt-4">
+              Discover the transformative work we're doing across African communities
+            </p>
+          </div>
           <div className="grid md:grid-cols-3 gap-8">
             {featuredProjects.map((project, index) => (
-              <FadeInSection key={project.slug} delay={index * 0.1}>
+              <FadeInSection delay={index * 0.1}>
                 <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl hover:-translate-y-2 transition-all">
-                  <div className="h-48 bg-gradient-to-br from-primary-400 to-primary-600 flex items-center justify-center">
-                    <div className="text-white text-6xl">
-                      <FaHeart />
-                    </div>
-                  </div>
+                  <ProjectImage
+                    src={project.featured_image}
+                    alt={project.title}
+                    className="h-48"
+                  />
                   <div className="p-6">
                     <span className="text-xs font-semibold text-primary-600 uppercase">{project.category}</span>
                     <h3 className="text-xl font-bold mt-2 mb-3">{project.title}</h3>
