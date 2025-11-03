@@ -12,9 +12,14 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* About Section */}
           <div>
-            <h3 className="text-2xl font-bold text-primary-400 mb-4">
-              Tribe Africa Foundation
-            </h3>
+            <Link href="/" className="flex items-center">
+            <Image
+              src="/images/logo.png"
+              alt="Tribe Africa Foundation"
+              width={150}
+              height={50}
+              className="h-12 w-auto"
+            />
             <p className="text-gray-300 text-sm">
               {footer.tagline}
             </p>

@@ -14,7 +14,6 @@ export default function Home() {
   const { home } = content;
   const featuredProjects = getFeaturedProjects(3);
 
-  // Hero images that will transition (you can replace these paths with actual images)
   const heroImages = [
     '/images/hero/hero1.jpg',
     '/images/hero/hero2.png',
